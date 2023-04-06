@@ -1,9 +1,31 @@
-function isPalindrome(word) {
+
+  /* 
+Test cases
+
+console.log(isPalindrome("racecar")); // true
+console.log(isPalindrome("mom")); // true
+console.log(isPalindrome("robot")); // false
+console.log(isPalindrome("madam")); // true
+
+  */
   // Write your algorithm here
-}
+  function isPalindrome(str) {
+    for (let i = 0; i < str.length / 2; i++) {
+      if (str[i] !== str[str.length - 1 - i]) {
+        return false;
+      }
+    }
+    return true;
+  }
 
 /* 
   Add your pseudocode here
+function isPalindrome(str)
+    for i from 0 to length of str / 2
+        if str[i] is not equal to str[length of str - 1 - i]
+            return false
+    return true
+
 */
 
 /*
